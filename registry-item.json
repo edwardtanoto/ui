@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button",
+  "type": "registry:component",
+  "title": "Button",
+  "description": "Displays a button or a component that looks like a button.",
+  "author": "shadcn",
+  "registryDependencies": [],
+  "dependencies": [
+    "@radix-ui/react-slot",
+    "class-variance-authority"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/ui/button.tsx",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "primary": "240 5.9% 10%",
+      "primary-foreground": "0 0% 98%"
+    },
+    "dark": {
+      "primary": "0 0% 98%",
+      "primary-foreground": "240 5.9% 10%"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton",
+  "type": "registry:ui",
+  "title": "Skeleton",
+  "description": "Loading placeholder skeleton component.",
+  "files": [
+    {
+      "path": "registry/new-york/ui/skeleton.tsx",
+      "content": "import type React from \"react\"\nimport { cn } from \"@/lib/utils\"\n\nfunction Skeleton({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"skeleton\"\n      // <CHANGE> Changed rounded-md to rounded-[2px] for brutalist style\n      className={cn(\"bg-accent animate-pulse rounded-[2px]\", className)}\n      {...props}\n    />\n  )\n}\n\nexport { Skeleton }\n",
+      "type": "registry:ui"
+    }
+  ]
+}

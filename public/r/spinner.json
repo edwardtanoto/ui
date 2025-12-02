@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner",
+  "type": "registry:ui",
+  "title": "Spinner",
+  "description": "Loading spinner with brutalist square design.",
+  "files": [
+    {
+      "path": "registry/new-york/ui/spinner.tsx",
+      "content": "import type React from \"react\"\nimport { cn } from \"@/lib/utils\"\n\n// <CHANGE> Custom brutalist square spinner instead of circular\nfunction Spinner({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div role=\"status\" aria-label=\"Loading\" className={cn(\"relative size-4\", className)} {...props}>\n      <div className=\"absolute inset-0 animate-spin\">\n        <div className=\"size-full rounded-[2px] border-2 border-foreground/20 border-t-foreground\" />\n      </div>\n    </div>\n  )\n}\n\nexport { Spinner }\n",
+      "type": "registry:ui"
+    }
+  ]
+}
