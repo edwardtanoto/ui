@@ -154,7 +154,7 @@ export function ExampleForm() {
           </div>
         </CardContent>
         <CardFooter>
-          <Button type="submit" size="sm" disabled={pending}>
+          <Button type="submit" size="sm" disabled={pending} dither>
             {pending ? "Sending..." : "Send Message"}
           </Button>
         </CardFooter>
